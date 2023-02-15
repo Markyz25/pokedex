@@ -18,6 +18,7 @@ header {
     justify-content: center;
     gap: 20px;
     padding: 35px 25px;
+    width: 100%;
 }
 
 header img {
@@ -27,21 +28,94 @@ header img {
 
 header h1 {
     text-transform: uppercase;
-    font-size: 2em;
+    font-size: 2.5em;
 }
 
 .content {
-    position: absolute;
     display: flex;
     justify-content: space-around;
 }
 
+/*Menu burguer*/
 
-header span {
+.menu-btn {
     position: relative;
-    left: 50%;
-    display: block;
-    color: white;
-    text-align: right;
+    left: 34%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
     cursor: pointer;
+    transition: all .5s ease-in-out;
+  }
+
+  .menu-btn__burger {
+    width: 50px;
+    height: 6px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255,101,47,.2);
+    transition: all .5s ease-in-out;
+  }
+
+  .menu-btn__burger::before,
+  .menu-btn__burger::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 6px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255,101,47,.2);
+    transition: all .5s ease-in-out;
+  }
+
+  .menu-btn__burger::before {
+    transform: translateY(-16px);
+  }
+  .menu-btn__burger::after {
+    transform: translateY(16px);
+  }
+
+  /* Animation */
+  .menu-btn.open .menu-btn__burger {
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+  }
+
+
+  .menu-btn.open .menu-btn__burger::before {
+    transform: rotate(45deg) translate(35px, -35px);
+  }
+
+  .menu-btn.open .menu-btn__burger::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+  }
+
+menu {
+    display: none;
+    position: absolute;
+    top: 80px;
+    right: 14px;
+    padding: 20px 40px;
+    background-color: rgba(87, 87, 87, 0.356);
+    border-radius: 15px;
+
+}
+
+menu ul {
+    list-style: none;
+}
+
+menu > ul > li > a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    padding: 20px 0;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 1.2em;
 }
