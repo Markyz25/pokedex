@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'Pokemon Solid';
+    src: url(../fonts/Pokemon\ Solid.ttf) format('truetype');
+}
+
+body {
+    background-image: url(../images/fundo-site.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 35px 25px;
+}
+
+header img {
+    width: 32px;
+    height: 32px;
+}
+
+header h1 {
+    text-transform: uppercase;
+    font-size: 2em;
+}
+
+.content {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+header span {
+    position: relative;
+    left: 50%;
+    display: block;
+    color: white;
+    text-align: right;
+    cursor: pointer;
+}
