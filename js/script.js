@@ -1,15 +1,10 @@
-const menuBtn = document.querySelector('.menu-btn');
-const menuDesc = document.querySelector('.menu-description')
-let menuOpen = false;
-menuBtn.addEventListener('click', () => {
-  if(!menuOpen) {
-    menuBtn.classList.add('open');
-
-    menuDesc.style.display = 'block'
-    menuOpen = true;
+function showMenu() {
+  let menuMobile = document.querySelector('.mobile-menu')
+  if (menuMobile.classList.contains('open')) {
+    menuMobile.classList.remove('open');
+    let imgMenu = document.querySelector('.icon').src = 'assets/menu.svg'
   } else {
-    menuBtn.classList.remove('open');
-    menuDesc.style.display = 'none'
-    menuOpen = false;
+    menuMobile.classList.add('open')
+    let imgMenu = document.querySelector('.icon').src = 'assets/menuClose.svg'
   }
-});
+}

@@ -71,3 +71,49 @@ ul a {
   border: none;
   border-radius: 5px;
 }
+
+.mobile-menu-icon {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+@media screen and (max-width: 732px) {
+  .navegation {
+    display: none;
+  }
+
+  .search-navegation {
+    display: none;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+    text-align: center;
+  }
+
+  .mobile-menu-icon button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+    background-color: #24252a6b;
+  }
+
+  .mobile-menu .nav-item {
+    display: block;
+    padding-top: 1.2rem;
+  }
+
+  .open {
+    display: block;
+  }
+}
