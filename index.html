@@ -23,13 +23,13 @@
             <div class="navegation">
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
-                    <li><a href="#" target="_blank">Pokemons</a></li>
-                    <li><a href="#" target="_blank">Berries</a></li>
+                    <li><a href="#" target="_blank">Pokedex</a></li>
+                    <li><a href="#" target="_blank">Itens</a></li>
                     <li><a href="#" target="_blank">4</a></li>
                 </ul>
             </div>
             <div class="search-navegation">
-                <form>
+                <form id="form">
                     <input type="search" name="search" id="search">
                     <button class="button-nav">ok</button>
                 </form>
@@ -52,7 +52,22 @@
     </header>
     
     <main>
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/6.gif" alt="Pokemon" class="pokemon__image">
 
+        <h1 class="pokemon__data">
+            <span class="pokemon__number">6</span> -
+            <span class="pokemon__name">charizard</span>
+        </h1>
+
+        <form class="form">
+            <input type="search" 
+            id="search"
+            class="search"
+            placeholder="Name or Number"
+            required>
+        </form>
+
+        <img src="images/pokedex.png" alt="Pokedex" class="pokedex">
     </main>
 
     <footer>
