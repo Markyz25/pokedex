@@ -1,16 +1,16 @@
 
 function showMenu() {
   let nav = document.querySelector('.nav-list')
-  let teste = document.querySelectorAll('.teste')
+  let nav_itens = document.querySelectorAll('.nav-itens')
   if (nav.classList.contains('open')) {
     nav.classList.remove('open');
-    teste.forEach(function(testes) {
-      testes.classList.remove('fixed')
+    nav_itens.forEach(function(navs) {
+      navs.classList.remove('fixed')
     })
   } else {
     nav.classList.add('open')
-    teste.forEach(function(testes) {
-    testes.classList.add('fixed')
+    nav_itens.forEach(function(navs) {
+    navs.classList.add('fixed')
     })
   }
 }
