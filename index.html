@@ -13,41 +13,21 @@
 <body>
 
     <header> 
-        <nav class="nav-bar">
-            <a href="index.html">
-                <div class="logo">
-                    <h1>Pokedex</h1>
-                    <img src="images/pokebola.png" alt="Pokebola" class="img-pokebola">
-                </div>
-            </a>
-            <div class="navegation">
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="#" target="_blank">Pokedex</a></li>
-                    <li><a href="#" target="_blank">Itens</a></li>
-                    <li><a href="#" target="_blank">4</a></li>
-                </ul>
+   
+        <nav class="navegation">
+            <a class="logo" href="#">Pokedex<img src="images/pokebola.png" alt="pokebola"></a>
+            <div class="mobile-menu" onclick="showMenu()">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
             </div>
-            <div class="search-navegation">
-                <form id="form">
-                    <input type="search" name="search" id="search">
-                    <button class="button-nav">ok</button>
-                </form>
-            </div>
-
-            <div class="mobile-menu-icon">
-                <button onclick="showMenu()"><img src="assets/menu.svg" alt="menu" class="icon"></button>
-            </div>
-        </nav>
-
-        <div class="mobile-menu">
-            <ul>
-                <li class="nav-item"><a href="index.html">Inicio</a></li>
-                <li class="nav-item"><a href="#" target="_blank">Pokemons</a></li>
-                <li class="nav-item"><a href="#" target="_blank">Berries</a></li>
-                <li class="nav-item"><a href="#" target="_blank">4</a></li>
+            <ul class="nav-list">
+                <li class="teste"><a href="#">Inicio</a></li>
+                <li class="teste"><a href="#">Pokedex</a></li>
+                <li class="teste"><a href="#">Berries</a></li>
+                <li class="teste"><a href="#">Contato</a></li>
             </ul>
-        </div>
+        </nav>
 
     </header>
     
@@ -55,17 +35,22 @@
         <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/6.gif" alt="Pokemon" class="pokemon__image">
 
         <h1 class="pokemon__data">
-            <span class="pokemon__number">6</span> -
-            <span class="pokemon__name">charizard</span>
+            <span class="pokemon__number"></span> -
+            <span class="pokemon__name"></span>
         </h1>
 
         <form class="form">
             <input type="search" 
-            id="search"
+            id="search-pokemon"
             class="search"
             placeholder="Name or Number"
             required>
         </form>
+
+        <div class="buttons">
+            <button class="button btn-prev"> &lt Prev</button>
+            <button class="button btn-next">Next &gt </button>
+        </div>
 
         <img src="images/pokedex.png" alt="Pokedex" class="pokedex">
     </main>
