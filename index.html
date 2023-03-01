@@ -1,65 +1,80 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pokedex</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-</head>
-<body>
-
-    <header> 
-   
-        <nav class="navegation">
-            <a class="logo" href="index.html">Pokedex<img src="images/pokebola.png" alt="pokebola"></a>
-            <div class="mobile-menu" onclick="showMenu()">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-            <ul class="nav-list">
-                <li class="nav-itens"><a href="index.html">Inicio</a></li>
-                <li class="nav-itens"><a href="https://pokeapi.co/" target="
-                    ">API</a></li>
-                <li class="nav-itens"><a href="#">Berries</a></li>
-                <li class="nav-itens"><a href="#">Contato</a></li>
-            </ul>
-        </nav>
-
-    </header>
-    
-    <main>
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/6.gif" alt="Pokemon" class="pokemon__image">
-
-        <h1 class="pokemon__data">
-            <span class="pokemon__number"></span> -
-            <span class="pokemon__name"></span>
-        </h1>
-
-        <form class="form">
-            <input type="search" 
-            id="search-pokemon"
-            class="search"
-            placeholder="Name or Number"
-            required>
-        </form>
-
-        <div class="buttons">
-            <button class="button btn-prev"> &lt Prev</button>
-            <button class="button btn-next">Next &gt </button>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navegation">
+        <a class="logo" href="index.html"
+          >Pokedex<img src="images/pokebola.png" alt="pokebola"
+        /></a>
+        <div class="mobile-menu" onclick="showMenu()">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
         </div>
+        <ul class="nav-list">
+          <li class="nav-itens"><a href="index.html">Inicio</a></li>
+          <li class="nav-itens">
+            <a
+              href="https://pokeapi.co/"
+              target="
+                    "
+              >API</a
+            >
+          </li>
+          <li class="nav-itens"><a href="#">Berries</a></li>
+          <li class="nav-itens"><a href="#">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
 
-        <img src="images/pokedex.png" alt="Pokedex" class="pokedex">
+    <main>
+      <img
+        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/6.gif"
+        alt="Pokemon"
+        class="pokemon__image"
+      />
+
+      <h1 class="pokemon__data">
+        <span class="pokemon__number"></span> -
+        <span class="pokemon__name"></span>
+      </h1>
+
+      <form class="form">
+        <input
+          type="search"
+          id="search-pokemon"
+          class="search"
+          placeholder="Name or Number"
+          required
+        />
+      </form>
+
+      <div class="buttons">
+        <button class="button btn-prev">&lt Prev</button>
+        <button class="button btn-next">Next &gt</button>
+      </div>
+
+      <img src="images/pokedex.png" alt="Pokedex" class="pokedex" />
     </main>
 
-    <footer>
+    <footer></footer>
 
-    </footer>
-    
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>
