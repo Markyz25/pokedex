@@ -69,8 +69,7 @@ a {
 
 main {
   display: inline-block;
-  margin-top: 8%;
-  padding: 15px;
+  margin-top: 1%;
   position: relative;
 }
 
@@ -93,7 +92,7 @@ main {
   top: 54.5%;
   left: 36%;
   font-weight: 600;
-  font-size: clamp(18px, 5vw, 30px);
+  font-size: clamp(14px, 5vw, 30px);
 }
 
 .pokemon__name {
@@ -219,7 +218,7 @@ main {
 }
 
 .mobile-menu.open .line1{
-  transform: rotate(45deg) translate(15px, 9px);
+  transform: rotate(45deg) translate(17px, 11px);
 }
 
 .mobile-menu.open .line2{
@@ -227,5 +226,5 @@ main {
 }
 
 .mobile-menu.open .line3{
-  transform: rotate(-45deg) translate(4px, 4px);
+  transform: rotate(-45deg) translate(7px, -2px);
 }
