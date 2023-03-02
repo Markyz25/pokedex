@@ -69,7 +69,7 @@ a {
 
 main {
   display: inline-block;
-  margin-top: 1%;
+  margin-top: 5%;
   position: relative;
 }
 
@@ -92,7 +92,7 @@ main {
   top: 54.5%;
   left: 36%;
   font-weight: 600;
-  font-size: clamp(14px, 5vw, 30px);
+  font-size: clamp(14px, 5vw, 1.5rem);
 }
 
 .pokemon__name {
@@ -160,17 +160,16 @@ main {
 @media screen and (max-width: 780px) {
   body {
     overflow-x: hidden;
-    overflow-y: hidden;
   }
 
   header {
-    position: relative;
+    width: 100vw;
   }
 
-  main {
+  /* main {
     position: absolute;
     left: 10%;
-  }
+  } */
 
   .nav-list {
     position: absolute;
@@ -185,6 +184,7 @@ main {
     transform: translateX(100%);
     transition: transform 1s ease-in-out;
     border-radius: 5px;
+    z-index: 5;
   }
 
   .nav-itens.navs {
