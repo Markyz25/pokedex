@@ -166,13 +166,14 @@ main {
     width: 100vw;
   }
 
-  /* main {
+  main {
     position: absolute;
-    left: 10%;
-  } */
+    left: 3%;
+    top: 14%;
+  }
 
   .nav-list {
-    position: absolute;
+    position: fixed;
     top: 8vh;
     right: 0;
     width: 23vh;
