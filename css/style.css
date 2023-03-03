@@ -167,9 +167,7 @@ main {
   }
 
   main {
-    position: absolute;
-    left: 3%;
-    top: 14%;
+    margin-top: 2%;
   }
 
   .nav-list {
