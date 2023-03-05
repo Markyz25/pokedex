@@ -134,6 +134,9 @@ main {
   border-radius: 20px;
   position: relative;
   transition: all 0.3s ease-in-out;
+  box-shadow: inset -0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.2),
+  0 0 1rem rgba(0, 0, 0, 0.1);;
+  cursor: pointer;
 }
 
 .button-toggle {
@@ -147,15 +150,37 @@ main {
   top: 2%;
   pointer-events: none;
   transition: all 0.3s ease-in-out;
+  box-shadow: inset -0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+.switch > .slider:after {
+  position: absolute;
+  transition: all 300ms ease-in-out;
+  top: 14%;
+  right: 0.5rem;
+  font-weight: bold;
+  font-size: 0.9rem;
+  z-index: 1;
+  content: 'OFF';
 }
 
 .toggle-input:checked ~ .slider {
   background-color: deeppink;
+  box-shadow: inset 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.2),
+  0 0 1rem rgba(50, 0, 150, 0.2);
 }
 
 .toggle-input:checked ~ .slider > .button-toggle {
   background-color: #ccc;
   right: 7%;
+  box-shadow: inset 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
+  background: #e0e2db;
+}
+
+.toggle-input:checked ~.slider:after {
+  content: 'ON';
+  right: 50%;
 }
 
 .toggle-input {
@@ -182,6 +207,7 @@ main {
   color: #fff;
   background-color: #444;
   box-shadow: -2px 3px 0 #222, -4px 6px 0 #000;
+  cursor: pointer;
 }
 
 .button:active {

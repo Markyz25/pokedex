@@ -25,6 +25,7 @@ const form = document.querySelector(".form");
 const input = document.querySelector("#search-pokemon");
 const btnPrev = document.querySelector(".btn-prev")
 const btnNext = document.querySelector(".btn-next")
+const toggle = document.querySelector(".toggle-input")
 
 let searchPokemon = 1
 
@@ -46,13 +47,23 @@ const renderPokemon = async (pokemon) => {
   pokeNumber.innerHTML = ''
   const data = await fetchPokemon(pokemon);
   
-  if (data) {
+  if (data && toggle.checked == false) {
     pokeImage.style.display = 'block'
     pokeName.innerHTML = data.name;
     pokeNumber.innerHTML = data.id;
     pokeImage.src =
     data["sprites"]["versions"]["generation-v"]["black-white"]["animated"][
       "front_default"
+    ];
+    input.value = ''
+    searchPokemon = data.id
+  } else if (data && toggle.checked == true){
+    pokeImage.style.display = 'block'
+    pokeName.innerHTML = data.name;
+    pokeNumber.innerHTML = data.id;
+    pokeImage.src =
+    data["sprites"]["versions"]["generation-v"]["black-white"]["animated"][
+      "front_shiny"
     ];
     input.value = ''
     searchPokemon = data.id
