@@ -65,12 +65,16 @@
         />
       </form>
 
-      <form class="form-shiny">
-        <label for="shiny-on">Shiny on</label>
-        <input type="radio" name="active" id="shiny-on">
-        <input type="radio" name="active" id="shiny-off">
-        <label for="shiny-off">Shiny off</label>
-      </form>
+      <section class="container">
+        <div class="toggle-wrapper">
+          <label>
+            <input type="checkbox" class="toggle-input">
+            <div class="slider">
+              <button class="button-toggle"></button>
+            </div>
+          </label>
+        </div>
+      </section>
 
       <div class="buttons">
         <button class="button btn-prev">&lt Prev</button>

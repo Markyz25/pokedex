@@ -17,6 +17,7 @@ header {
   padding: 1%;
   font-weight: 600;
   z-index: 3;
+  margin-bottom: 3%;
 }
 
 a {
@@ -69,7 +70,7 @@ a {
 
 main {
   display: inline-block;
-  margin-top: 5%;
+  margin-top: 7%;
   position: relative;
 }
 
@@ -119,14 +120,46 @@ main {
   font-size: clamp(8px, 5vw, 1rem);
 }
 
-.form-shiny {
-  width: 60%;
+.toggle-wrapper {
   position: absolute;
-  bottom: 21%;
-  left: 42%;
-  display: flex;
-  justify-content: space-between;
-  transform: translate(-45%, 0);
+  bottom: 20%;
+  left: 39%;
+}
+
+.slider {
+  background-color: #ccc;
+  width: 4rem;
+  height: 1.7rem;
+  border: 2px solid #bbb;
+  border-radius: 20px;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.button-toggle {
+  background-color: deeppink;
+  width: 1.3rem;
+  height: 1.3rem;
+  border: none;
+  border-radius: 50%;
+  position: absolute;
+  right: 63%;
+  top: 2%;
+  pointer-events: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.toggle-input:checked ~ .slider {
+  background-color: deeppink;
+}
+
+.toggle-input:checked ~ .slider > .button-toggle {
+  background-color: #ccc;
+  right: 7%;
+}
+
+.toggle-input {
+  display: none;
 }
 
 .buttons {
